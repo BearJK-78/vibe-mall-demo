@@ -1,0 +1,332 @@
+.login-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* 상단 네비게이션 */
+.login-nav {
+  margin-bottom: 2rem;
+}
+
+.nav-link {
+  font-size: 0.875rem;
+  color: #111;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* 브랜드 섹션 */
+.brand-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.brand-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.05em;
+}
+
+.brand-separator {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #111;
+  margin: 0 0.25rem;
+}
+
+.brand-description {
+  font-size: 0.875rem;
+  color: #111;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* 로그인 폼 */
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  padding: 0.875rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #111;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #111;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #999;
+  font-size: 0.875rem;
+}
+
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-container input {
+  padding-right: 3rem;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  padding: 0;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.password-toggle-icon:hover {
+  color: #111;
+}
+
+.password-toggle-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.error-message {
+  font-size: 0.75rem;
+  color: #d32f2f;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.general-error {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.input-error {
+  border-color: #d32f2f !important;
+}
+
+/* 로그인 버튼 */
+.login-button {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-family: inherit;
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: #333;
+}
+
+.login-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.login-button.secondary {
+  background-color: #f5f5f5;
+  color: #111;
+  border: 1px solid #ddd;
+}
+
+.login-button.secondary:hover:not(:disabled) {
+  background-color: #e9e9e9;
+}
+
+.login-alert {
+  background: #f8f9ff;
+  border: 1px solid #d9e1ff;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #2f3a73;
+  font-size: 0.9rem;
+}
+
+.login-alert-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.login-alert-actions .login-button {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* 하단 옵션 */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
+.auto-login-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #111;
+}
+
+.auto-login-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin: 0;
+  accent-color: #111;
+}
+
+.auto-login-checkbox span {
+  user-select: none;
+}
+
+.find-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.find-link {
+  background: none;
+  border: none;
+  color: #111;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.find-link:hover {
+  text-decoration: underline;
+}
+
+.link-separator {
+  color: #999;
+  font-size: 0.875rem;
+}
+
+/* 회원가입 섹션 */
+.signup-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.signup-text {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0 0 1rem 0;
+}
+
+.signup-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #111;
+  padding: 0.875rem 2rem;
+  border: 1px solid #111;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  font-family: inherit;
+}
+
+.signup-button:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .brand-name {
+    font-size: 1.75rem;
+  }
+
+  .brand-separator {
+    font-size: 1.75rem;
+  }
+
+  .brand-description {
+    font-size: 0.8125rem;
+  }
+
+  .login-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .find-links {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
